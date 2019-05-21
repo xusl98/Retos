@@ -121,6 +121,11 @@ public class tablas extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 1.png"))); // NOI18N
 
         salir1.setText("Salir");
+        salir1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salir1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Impact", 0, 14)); // NOI18N
         jLabel2.setText("¿CUANTAS ESTÁN MAL?");
@@ -821,13 +826,17 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_Comprobar2ActionPerformed
 
     private void salir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir2ActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir2ActionPerformed
 
     private void salir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir3ActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir3ActionPerformed
 
     private void comprobar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar3ActionPerformed
@@ -846,7 +855,10 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar3ActionPerformed
 
     private void salir4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir4ActionPerformed
-        // TODO add your handling code here:
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir4ActionPerformed
 
     private void comprobar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar4ActionPerformed
@@ -864,7 +876,10 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar4ActionPerformed
 
     private void salir5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir5ActionPerformed
-        // TODO add your handling code here:
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir5ActionPerformed
 
     private void comprobar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar5ActionPerformed
@@ -883,7 +898,10 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar5ActionPerformed
 
     private void salir6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir6ActionPerformed
-        // TODO add your handling code here:
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir6ActionPerformed
 
     private void comprobar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar6ActionPerformed
@@ -901,7 +919,10 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar6ActionPerformed
 
     private void salir7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir7ActionPerformed
-        // TODO add your handling code here:
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir7ActionPerformed
 
     private void comprobar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar7ActionPerformed
@@ -919,7 +940,10 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar7ActionPerformed
 
     private void salir8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir8ActionPerformed
-        // TODO add your handling code here:
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir8ActionPerformed
 
     private void comprobar8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar8ActionPerformed
@@ -937,7 +961,10 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar8ActionPerformed
 
     private void salir9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir9ActionPerformed
-        // TODO add your handling code here:
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir9ActionPerformed
 
     private void comprobar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar9ActionPerformed
@@ -955,7 +982,10 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar9ActionPerformed
 
     private void salir10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir10ActionPerformed
-        // TODO add your handling code here:
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
     }//GEN-LAST:event_salir10ActionPerformed
 
     private void comprobar10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar10ActionPerformed
@@ -989,6 +1019,13 @@ public class tablas extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir1ActionPerformed
+        Menu.nombrePreguntado = true;
+        this.dispose();
+        Menu frame = new Menu();
+        frame.setVisible(true);
+    }//GEN-LAST:event_salir1ActionPerformed
 
     /**
      * @param args the command line arguments
