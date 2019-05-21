@@ -1,10 +1,13 @@
 
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /*
@@ -23,6 +26,8 @@ public class Menu extends javax.swing.JFrame {
      */
     static String nombre = "";
     static boolean nombrePreguntado = false;
+    
+    JLabel background;
 
     public Menu() {
         initComponents();
@@ -38,9 +43,13 @@ public class Menu extends javax.swing.JFrame {
 
         BufferedImage imgFrancesco = null;
         BufferedImage imgMuchacho = null;
+        BufferedImage imgSumas = null;
+        BufferedImage imgPizarra = null;
         try {
             imgFrancesco = ImageIO.read(new File("francesco.jpg"));
             imgMuchacho = ImageIO.read(new File("elmuchacho.jpg"));
+            imgSumas = ImageIO.read(new File("juegoFran.jpg"));
+            imgPizarra = ImageIO.read(new File("pizarra.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -48,8 +57,18 @@ public class Menu extends javax.swing.JFrame {
                 Image.SCALE_SMOOTH);
         Image dimgMuchacho = imgMuchacho.getScaledInstance(btnJuegoSamu.getWidth(), btnJuegoSamu.getHeight(),
                 Image.SCALE_SMOOTH);
+        Image dimgSumas = imgSumas.getScaledInstance(btnJuegoFran.getWidth(), btnJuegoFran.getHeight(),
+                Image.SCALE_SMOOTH);
+        Image dimgPizarra = imgPizarra.getScaledInstance(this.getWidth(), this.getHeight(),
+                Image.SCALE_SMOOTH);
         btnJuego1.setIcon(new ImageIcon(dimgFrancesco));
         btnJuegoSamu.setIcon(new ImageIcon(dimgMuchacho));
+        btnJuegoFran.setIcon(new ImageIcon(dimgSumas));
+        
+        setLayout(new BorderLayout());
+        background = new JLabel(new ImageIcon(dimgPizarra));
+        add(background);
+        background.setLayout(new FlowLayout());
     }
 
     /**
@@ -63,8 +82,8 @@ public class Menu extends javax.swing.JFrame {
 
         btnJuego1 = new javax.swing.JButton();
         btnJuegoSamu = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnJuegoJavi = new javax.swing.JButton();
+        btnJuegoFran = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,6 +99,12 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        btnJuegoFran.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJuegoFranActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -88,9 +113,9 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(93, 93, 93)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnJuegoFran, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(107, 107, 107)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnJuegoJavi, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnJuego1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(107, 107, 107)
@@ -106,8 +131,8 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(btnJuego1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnJuegoJavi, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnJuegoFran, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(54, Short.MAX_VALUE))
         );
 
@@ -125,6 +150,12 @@ public class Menu extends javax.swing.JFrame {
         Juegoo frame = new Juegoo();
         frame.setVisible(true);
     }//GEN-LAST:event_btnJuegoSamuActionPerformed
+
+    private void btnJuegoFranActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuegoFranActionPerformed
+        this.dispose();
+        tablas frame = new tablas();
+        frame.setVisible(true);
+    }//GEN-LAST:event_btnJuegoFranActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,8 +194,8 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnJuego1;
+    private javax.swing.JButton btnJuegoFran;
+    private javax.swing.JButton btnJuegoJavi;
     private javax.swing.JButton btnJuegoSamu;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     // End of variables declaration//GEN-END:variables
 }

@@ -27,9 +27,9 @@
               <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jButton4" min="-2" pref="92" max="-2" attributes="0"/>
+                      <Component id="btnJuegoFran" min="-2" pref="92" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" pref="92" max="-2" attributes="0"/>
+                      <Component id="btnJuegoJavi" min="-2" pref="92" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="btnJuego1" min="-2" pref="92" max="-2" attributes="0"/>
@@ -51,8 +51,8 @@
               </Group>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton3" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
-                  <Component id="jButton4" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                  <Component id="btnJuegoJavi" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                  <Component id="btnJuegoFran" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="54" max="32767" attributes="0"/>
           </Group>
@@ -70,9 +70,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnJuegoSamuActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="btnJuegoJavi">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="btnJuegoFran">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnJuegoFranActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
