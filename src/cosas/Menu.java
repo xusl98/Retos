@@ -1,3 +1,5 @@
+package cosas;
+
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -9,6 +11,7 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import juego.juego;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -45,10 +48,12 @@ public class Menu extends javax.swing.JFrame {
         BufferedImage imgMuchacho = null;
         BufferedImage imgSumas = null;
         BufferedImage imgPizarra = null;
+        BufferedImage imgJuego = null;
         try {
             imgFrancesco = ImageIO.read(new File("francesco.jpg"));
             imgMuchacho = ImageIO.read(new File("elmuchacho.jpg"));
             imgSumas = ImageIO.read(new File("juegoFran.jpg"));
+            imgJuego = ImageIO.read(new File("juego.png"));
             imgPizarra = ImageIO.read(new File("pizarra.png"));
         } catch (IOException e) {
             e.printStackTrace();
@@ -59,11 +64,14 @@ public class Menu extends javax.swing.JFrame {
                 Image.SCALE_SMOOTH);
         Image dimgSumas = imgSumas.getScaledInstance(btnJuegoFran.getWidth(), btnJuegoFran.getHeight(),
                 Image.SCALE_SMOOTH);
+        Image dimgJuego = imgJuego.getScaledInstance(btnJuegoJavi.getWidth(), btnJuegoJavi.getHeight(),
+                Image.SCALE_SMOOTH);
         Image dimgPizarra = imgPizarra.getScaledInstance(this.getWidth(), this.getHeight(),
                 Image.SCALE_SMOOTH);
         btnJuego1.setIcon(new ImageIcon(dimgFrancesco));
         btnJuegoSamu.setIcon(new ImageIcon(dimgMuchacho));
         btnJuegoFran.setIcon(new ImageIcon(dimgSumas));
+        btnJuegoJavi.setIcon(new ImageIcon(dimgJuego));
         
         setLayout(new BorderLayout());
         background = new JLabel(new ImageIcon(dimgPizarra));
@@ -96,6 +104,12 @@ public class Menu extends javax.swing.JFrame {
         btnJuegoSamu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJuegoSamuActionPerformed(evt);
+            }
+        });
+
+        btnJuegoJavi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJuegoJaviActionPerformed(evt);
             }
         });
 
@@ -157,6 +171,23 @@ public class Menu extends javax.swing.JFrame {
         frame.setVisible(true);
     }//GEN-LAST:event_btnJuegoFranActionPerformed
 
+    private void btnJuegoJaviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuegoJaviActionPerformed
+        this.dispose();
+        juego frame = new juego();
+        frame.setVisible(true);
+    }//GEN-LAST:event_btnJuegoJaviActionPerformed
+
+    public static String getNombre() {
+        return nombre;
+    }
+
+    public static void setNombrePreguntado(boolean nombrePreguntado) {
+        Menu.nombrePreguntado = nombrePreguntado;
+    }
+
+    
+    
+    
     /**
      * @param args the command line arguments
      */

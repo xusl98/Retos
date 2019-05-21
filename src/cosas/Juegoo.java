@@ -1,3 +1,5 @@
+package cosas;
+
 
 import javax.swing.JOptionPane;
 
