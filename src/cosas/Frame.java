@@ -363,10 +363,16 @@ public class Frame extends javax.swing.JFrame {
                             Image.SCALE_SMOOTH);
                     lblRanking.setIcon(new ImageIcon(dimgRanking));
                     lblRanking2.setIcon(new ImageIcon(dimgRanking));
+                    lblRanking3.setIcon(new ImageIcon(dimgRanking));
+                    lblRanking4.setIcon(new ImageIcon(dimgRanking));
+                    lblRanking5.setIcon(new ImageIcon(dimgRanking));
 
                     try {
                         lblRank1.setText(array.get(array.size()-1).getNombre() + "        Aciertos: " + array.get(array.size()-1).getAciertos() + "        Fallos: " + array.get(array.size()-1).getFallos());
                         lblRank2.setText(array.get(array.size()-2).getNombre() + "        Aciertos: " + array.get(array.size()-2).getAciertos() + "        Fallos: " + array.get(array.size()-2).getFallos());
+                        lblRank3.setText(array.get(array.size()-3).getNombre() + "        Aciertos: " + array.get(array.size()-3).getAciertos() + "        Fallos: " + array.get(array.size()-3).getFallos());
+                        lblRank4.setText(array.get(array.size()-4).getNombre() + "        Aciertos: " + array.get(array.size()-4).getAciertos() + "        Fallos: " + array.get(array.size()-4).getFallos());
+                        lblRank5.setText(array.get(array.size()-5).getNombre() + "        Aciertos: " + array.get(array.size()-5).getAciertos() + "        Fallos: " + array.get(array.size()-5).getFallos());
 
                     } catch (Exception e) {
 
@@ -426,6 +432,18 @@ public class Frame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         lblRank2 = new javax.swing.JLabel();
         lblRanking2 = new javax.swing.JLabel();
+        panelRanking3 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        lblRank3 = new javax.swing.JLabel();
+        lblRanking3 = new javax.swing.JLabel();
+        panelRanking4 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        lblRank4 = new javax.swing.JLabel();
+        lblRanking4 = new javax.swing.JLabel();
+        panelRanking5 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        lblRank5 = new javax.swing.JLabel();
+        lblRanking5 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
 
@@ -531,7 +549,7 @@ public class Frame extends javax.swing.JFrame {
         panelRanking.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
         lblRank1.setForeground(new java.awt.Color(255, 255, 255));
-        panelRanking.add(lblRank1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 450, 20));
+        panelRanking.add(lblRank1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 450, 20));
         panelRanking.add(lblRanking, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 666, 20));
 
         panelRanking2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -541,16 +559,50 @@ public class Frame extends javax.swing.JFrame {
         panelRanking2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
         lblRank2.setForeground(new java.awt.Color(255, 255, 255));
-        panelRanking2.add(lblRank2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 450, 20));
+        panelRanking2.add(lblRank2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 450, 20));
         panelRanking2.add(lblRanking2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 666, 20));
+
+        panelRanking3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("3");
+        panelRanking3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+
+        lblRank3.setForeground(new java.awt.Color(255, 255, 255));
+        panelRanking3.add(lblRank3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 450, 20));
+        panelRanking3.add(lblRanking3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 666, 20));
+
+        panelRanking4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("4");
+        panelRanking4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+
+        lblRank4.setForeground(new java.awt.Color(255, 255, 255));
+        panelRanking4.add(lblRank4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 450, 20));
+        panelRanking4.add(lblRanking4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 666, 20));
+
+        panelRanking5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("5");
+        panelRanking5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+
+        lblRank5.setForeground(new java.awt.Color(255, 255, 255));
+        panelRanking5.add(lblRank5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 450, 20));
+        panelRanking5.add(lblRanking5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 666, 20));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRanking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelRanking, javax.swing.GroupLayout.DEFAULT_SIZE, 686, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(panelRanking2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelRanking2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelRanking3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelRanking4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelRanking5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -560,7 +612,13 @@ public class Frame extends javax.swing.JFrame {
                 .addComponent(panelRanking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelRanking2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(396, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelRanking3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelRanking4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelRanking5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(318, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, "card3");
@@ -669,6 +727,9 @@ public class Frame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
@@ -680,13 +741,22 @@ public class Frame extends javax.swing.JFrame {
     private javax.swing.JLabel lblPregunta;
     private javax.swing.JLabel lblRank1;
     private javax.swing.JLabel lblRank2;
+    private javax.swing.JLabel lblRank3;
+    private javax.swing.JLabel lblRank4;
+    private javax.swing.JLabel lblRank5;
     private javax.swing.JLabel lblRanking;
     private javax.swing.JLabel lblRanking2;
+    private javax.swing.JLabel lblRanking3;
+    private javax.swing.JLabel lblRanking4;
+    private javax.swing.JLabel lblRanking5;
     private javax.swing.JLabel lblResp1;
     private javax.swing.JLabel lblResp2;
     private javax.swing.JLabel lblResp3;
     private javax.swing.JLabel lblResp4;
     private javax.swing.JPanel panelRanking;
     private javax.swing.JPanel panelRanking2;
+    private javax.swing.JPanel panelRanking3;
+    private javax.swing.JPanel panelRanking4;
+    private javax.swing.JPanel panelRanking5;
     // End of variables declaration//GEN-END:variables
 }
