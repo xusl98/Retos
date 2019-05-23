@@ -11,10 +11,14 @@ import java.io.Serializable;
 
 /**
  *
- * @author daw120
+ * @author Jesus Sainz
+ *  * @version 1.1
  */
 public class RankingCoches implements Serializable, Comparable<RankingCoches>{
     
+    /**
+     * atributos de la clase rankingCoches que almacena cada jugador con sus aciertos y fallos
+     */
     private String nombre;
     private int aciertos;
     private int fallos;

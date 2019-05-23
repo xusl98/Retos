@@ -20,7 +20,7 @@ import juego.juego;
  */
 /**
  *
- * @author daw120
+ * @author Jesus Sainz
  */
 public class Menu extends javax.swing.JFrame {
 
@@ -152,25 +152,41 @@ public class Menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+/**
+ * 
+ * @param evt 
+ * Boton para abrir el juego 1
+ */
     private void btnJuego1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuego1ActionPerformed
         this.dispose();
         Frame frame = new Frame();
         frame.setVisible(true);
     }//GEN-LAST:event_btnJuego1ActionPerformed
-
+/**
+ * 
+ * @param evt 
+ * Boton para abrir el juego 2
+ */
     private void btnJuegoSamuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuegoSamuActionPerformed
         this.dispose();
         Juegoo frame = new Juegoo();
         frame.setVisible(true);
     }//GEN-LAST:event_btnJuegoSamuActionPerformed
-
+/**
+ * 
+ * @param evt 
+ * Boton para abrir el juego 3
+ */
     private void btnJuegoFranActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuegoFranActionPerformed
         this.dispose();
         tablas frame = new tablas();
         frame.setVisible(true);
     }//GEN-LAST:event_btnJuegoFranActionPerformed
-
+/**
+ * 
+ * @param evt 
+ * Boton para abrir el juego 4
+ */
     private void btnJuegoJaviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuegoJaviActionPerformed
         this.dispose();
         juego frame = new juego();

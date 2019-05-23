@@ -1,6 +1,5 @@
 package cosas;
 
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -36,10 +35,13 @@ import javax.swing.Timer;
  */
 /**
  *
- * @author daw120
+ * @author Jesus Sainz
  */
 public class Frame extends javax.swing.JFrame {
 
+    /**
+     * declaración de variables
+     */
     TreeSet<RankingCoches> ranking = new TreeSet<>();
 
     ArrayList<JLabel> respuestas = new ArrayList<>();
@@ -128,16 +130,18 @@ public class Frame extends javax.swing.JFrame {
         movimientos.add(0);
 
         this.addKeyListener(new MyKeyListener());
-
+        /**
+         * Inicio del timer
+         */
         timer = new Timer(1, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 int x = lblCoche.getX();
                 int y = lblCoche.getY();
-//                System.out.println("x" + lblCoche.getX());
-//                System.out.println(lblCoche.getY());
 
-                //ARRIBA
+                /**
+                 * Movimiento hacia arriba del coche
+                 */
                 if (movimientos.get(movimientos.size() - 1) == 1) {
 
                     lblCoche.setSize(cocheX, cocheY);
@@ -159,7 +163,9 @@ public class Frame extends javax.swing.JFrame {
                     }
 
                 }
-                //DERECHA
+                /**
+                 * Movimiento hacia la derecha del coche
+                 */
                 if (movimientos.get(movimientos.size() - 1) == 2) {
 
                     lblCoche.setSize(cocheHorizontalX, cocheHorizontalY);
@@ -180,7 +186,9 @@ public class Frame extends javax.swing.JFrame {
                         lblCoche.setLocation(lblCoche.getX() + 20, lblCoche.getY());
                     }
                 }
-                //ABAJO
+                /**
+                 * Movimiento hacia abajo del coche
+                 */
                 if (movimientos.get(movimientos.size() - 1) == 3) {
                     lblCoche.setSize(cocheX, cocheY);
                     BufferedImage imgCoche = null;
@@ -200,7 +208,9 @@ public class Frame extends javax.swing.JFrame {
                         lblCoche.setLocation(lblCoche.getX(), lblCoche.getY() + 20);
                     }
                 }
-                //IZQUIERDA
+                /**
+                 * Movimiento hacia la izquierda del coche
+                 */
                 if (movimientos.get(movimientos.size() - 1) == 4) {
 
                     lblCoche.setSize(cocheHorizontalX, cocheHorizontalY);
@@ -224,7 +234,10 @@ public class Frame extends javax.swing.JFrame {
 
                 movimientos.add(0);
 
-                //LLEGADA A RESPUESTAS
+                /**
+                 * Llegada del coche a las salidas y comprobación de la si la
+                 * respuesta es correcta
+                 */
                 if (lblCoche.getY() < 20) {
                     respElegida = 1;
                     if (!salido) {
@@ -316,7 +329,10 @@ public class Frame extends javax.swing.JFrame {
                     }
                 }
 
-                //AL LLEGAR AL MÁXIMO DE RONDAS
+                /**
+                 * Al llegar al máximo de rondas guarda el usuario en un file y
+                 * abre la pantalla de ranking mostrando los mejores resultados
+                 */
                 if (rondas == maxRondas) {
                     timer.stop();
                     jPanel1.setVisible(false);
@@ -328,14 +344,14 @@ public class Frame extends javax.swing.JFrame {
                         try {
                             os = new ObjectInputStream(new FileInputStream(archivo));
                             RankingCoches r;
-                            while (true){
+                            while (true) {
                                 r = (RankingCoches) os.readObject();
                                 ranking.add(r);
                             }
-                        } catch (Exception e){
+                        } catch (Exception e) {
                             System.out.println(e.getMessage());
                         } finally {
-                            if (os != null){
+                            if (os != null) {
                                 try {
                                     os.close();
                                 } catch (IOException ex) {
@@ -345,10 +361,9 @@ public class Frame extends javax.swing.JFrame {
                         }
                     }
                     ranking.add(new RankingCoches(Menu.nombre, aciertos, fallos));
-                    
-                    
+
                     ArrayList<RankingCoches> array = new ArrayList<>();
-                    for (RankingCoches rr : ranking){
+                    for (RankingCoches rr : ranking) {
                         array.add(rr);
                         System.out.println(rr.getNombre() + rr.getAciertos());
                     }
@@ -368,11 +383,11 @@ public class Frame extends javax.swing.JFrame {
                     lblRanking5.setIcon(new ImageIcon(dimgRanking));
 
                     try {
-                        lblRank1.setText(array.get(array.size()-1).getNombre() + "        Aciertos: " + array.get(array.size()-1).getAciertos() + "        Fallos: " + array.get(array.size()-1).getFallos());
-                        lblRank2.setText(array.get(array.size()-2).getNombre() + "        Aciertos: " + array.get(array.size()-2).getAciertos() + "        Fallos: " + array.get(array.size()-2).getFallos());
-                        lblRank3.setText(array.get(array.size()-3).getNombre() + "        Aciertos: " + array.get(array.size()-3).getAciertos() + "        Fallos: " + array.get(array.size()-3).getFallos());
-                        lblRank4.setText(array.get(array.size()-4).getNombre() + "        Aciertos: " + array.get(array.size()-4).getAciertos() + "        Fallos: " + array.get(array.size()-4).getFallos());
-                        lblRank5.setText(array.get(array.size()-5).getNombre() + "        Aciertos: " + array.get(array.size()-5).getAciertos() + "        Fallos: " + array.get(array.size()-5).getFallos());
+                        lblRank1.setText(array.get(array.size() - 1).getNombre() + "        Aciertos: " + array.get(array.size() - 1).getAciertos() + "        Fallos: " + array.get(array.size() - 1).getFallos());
+                        lblRank2.setText(array.get(array.size() - 2).getNombre() + "        Aciertos: " + array.get(array.size() - 2).getAciertos() + "        Fallos: " + array.get(array.size() - 2).getFallos());
+                        lblRank3.setText(array.get(array.size() - 3).getNombre() + "        Aciertos: " + array.get(array.size() - 3).getAciertos() + "        Fallos: " + array.get(array.size() - 3).getFallos());
+                        lblRank4.setText(array.get(array.size() - 4).getNombre() + "        Aciertos: " + array.get(array.size() - 4).getAciertos() + "        Fallos: " + array.get(array.size() - 4).getFallos());
+                        lblRank5.setText(array.get(array.size() - 5).getNombre() + "        Aciertos: " + array.get(array.size() - 5).getAciertos() + "        Fallos: " + array.get(array.size() - 5).getFallos());
 
                     } catch (Exception e) {
 
@@ -387,7 +402,7 @@ public class Frame extends javax.swing.JFrame {
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     } finally {
-                        if (os != null){
+                        if (os != null) {
                             try {
                                 os.close();
                             } catch (IOException ex) {
@@ -636,6 +651,9 @@ public class Frame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * @param evt botón del menu bar que te devuelve al menu de juego
+     */
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
         Menu.nombrePreguntado = true;
         this.dispose();
@@ -696,6 +714,9 @@ public class Frame extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * Método que genera una pregunta y pasa el parámetro respuesta a respuestas()
+     */
     public void pregunta() {
         int x = (int) Math.floor(Math.random() * 9) + 1;
         int y = (int) Math.floor(Math.random() * 9) + 1;
@@ -707,6 +728,10 @@ public class Frame extends javax.swing.JFrame {
 
     }
 
+    /**
+     * @param respuesta
+     * Método que genera las respuestas siendo una correcto y el resto aleatorias
+     */
     public void respuestas(int respuesta) {
 
         int x = (int) Math.floor(Math.random() * 3) + 1;

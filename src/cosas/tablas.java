@@ -16,8 +16,9 @@ import javax.swing.JOptionPane;
 public class tablas extends javax.swing.JFrame {
 
     /**
-     * Creates new form tablas
+     * Crea la interfaz grafica del juego de las tablas
      */
+
     public tablas() {
         initComponents();
         this.setLocationRelativeTo(this);
@@ -800,7 +801,8 @@ public class tablas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void comprobar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar1ActionPerformed
-        // TODO add your handling code here:
+         /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox1.getSelectedItem() == "2") {
             JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel2.setVisible(true);
@@ -814,7 +816,7 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar1ActionPerformed
 
     private void Comprobar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Comprobar2ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
         if (jComboBox2.getSelectedItem() == "3") {
                 JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel3.setVisible(true);
@@ -835,6 +837,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir2ActionPerformed
 
     private void salir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir3ActionPerformed
+        /** BotÃ³n  que lleva al menÃº principal */
+
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -842,7 +846,9 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir3ActionPerformed
 
     private void comprobar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar3ActionPerformed
-        // TODO add your handling code here:
+        
+       /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox3.getSelectedItem() == "4") {
              JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel4.setVisible(true);
@@ -857,6 +863,7 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar3ActionPerformed
 
     private void salir4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir4ActionPerformed
+        /** BotÃ³n  que lleva al menÃº principal */
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -864,7 +871,9 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir4ActionPerformed
 
     private void comprobar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar4ActionPerformed
-        // TODO add your handling code here:
+        
+      /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox4.getSelectedItem() == "1") {
             JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel5.setVisible(true);
@@ -878,6 +887,7 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar4ActionPerformed
 
     private void salir5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir5ActionPerformed
+        /** BotÃ³n  que lleva al menÃº principal */
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -885,7 +895,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir5ActionPerformed
 
     private void comprobar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar5ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox5.getSelectedItem() == "2") {
             JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             
@@ -900,6 +911,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar5ActionPerformed
 
     private void salir6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir6ActionPerformed
+        /** BotÃ³n  que lleva al menÃº principal */
+
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -907,7 +920,7 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir6ActionPerformed
 
     private void comprobar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar6ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
         if (jComboBox6.getSelectedItem() == "5") {
             JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel7.setVisible(true);
@@ -921,6 +934,9 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar6ActionPerformed
 
     private void salir7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir7ActionPerformed
+        
+         /** BotÃ³n  que lleva al menÃº principal */
+
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -928,7 +944,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir7ActionPerformed
 
     private void comprobar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar7ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox7.getSelectedItem() == "0") {
             JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel8.setVisible(true);
@@ -942,6 +959,7 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar7ActionPerformed
 
     private void salir8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir8ActionPerformed
+        /** BotÃ³n  que lleva al menÃº principal */
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -949,7 +967,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir8ActionPerformed
 
     private void comprobar8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar8ActionPerformed
-        // TODO add your handling code here:
+       /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox8.getSelectedItem() == "2") {
              JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel9.setVisible(true);
@@ -963,6 +982,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar8ActionPerformed
 
     private void salir9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir9ActionPerformed
+        /** BotÃ³n  que lleva al menÃº principal */
+
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -970,7 +991,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir9ActionPerformed
 
     private void comprobar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar9ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox9.getSelectedItem() == "10") {
              JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
             paneldel10.setVisible(true);
@@ -984,6 +1006,7 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar9ActionPerformed
 
     private void salir10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir10ActionPerformed
+        /** BotÃ³n  que lleva al menÃº principal */
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -991,7 +1014,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salir10ActionPerformed
 
     private void comprobar10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprobar10ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n que sirve para comprobar la respuesta correcta de la tabla con su correspondiente mensaje de acierto o fallo */
+
         if (jComboBox4.getSelectedItem() == "1") {
              JOptionPane.showMessageDialog(null, "Has acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
                JOptionPane.showMessageDialog(null, "JUEGO COMPLETADO, ¡MUY BIEN!", "Resultado", JOptionPane.INFORMATION_MESSAGE);
@@ -1006,7 +1030,8 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_comprobar10ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n  que lleva al menÃº principal */
+
         Menu.nombrePreguntado = true;
         this.dispose();
         Menu frame = new Menu();
@@ -1014,7 +1039,7 @@ public class tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        /** BotÃ³n que lleva al panel del nivel 1 del juego*/
 
         paneldel1.setVisible(true);
         jPanel1.setVisible(false);

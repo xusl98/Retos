@@ -203,7 +203,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="panelRanking" pref="686" max="32767" attributes="0"/>
+              <Component id="panelRanking" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="panelRanking2" min="-2" max="-2" attributes="0"/>

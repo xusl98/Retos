@@ -11,13 +11,24 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author daw119
+ * @author samuel sainz
+ * @see <a>https://www.java.com/es/</a>
+ * @since 23/05/2019
+ * @version 1.1
  */
 public class Juegoo extends javax.swing.JFrame {
+     /**
+     * Comezamos definiendo las opciones que vamos tener en nuestros combobox y checkbox.
+     */
 
     String Opciones1[] = {"5", "9", "10", "8"};
     String opciones2[] = {"7","6","3"};
     
+    /**
+     * Constructor sin parametros
+     * Inicializamos la posicion de nuestra applicacion.
+     * A continuacion cargamos los combobox con las opciones.
+     */
     public Juegoo() {
         initComponents();
         this.setLocationRelativeTo(this);
@@ -516,7 +527,11 @@ public class Juegoo extends javax.swing.JFrame {
        
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
-
+/**
+ * Creamos este metodo comprobar para saber si el resultado es correcto o incorrecto.
+ * Hasta que no es correcta la respuesta no se puede avanzar.
+ * @param evt 
+ */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          if((String)jComboBox1.getSelectedItem()=="8"){
             
@@ -531,7 +546,11 @@ public class Juegoo extends javax.swing.JFrame {
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
-
+/**
+ * Creamos este metodo comprobar para saber si el resultado es correcto o incorrecto.
+ * @return ventana de dialogo
+ * @param evt 
+ */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
          if((String)jComboBox2.getSelectedItem()=="7"){
             
@@ -542,7 +561,11 @@ public class Juegoo extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Opcion Incorrecta. Vuelve a intentarlo", "Resultado", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton3ActionPerformed
-
+/**
+ * Creamos este metodo comprobar para saber si el resultado es correcto o incorrecto.
+ * @return ventana de dialogo
+ * @param evt 
+ */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if((String)jComboBox3.getSelectedItem()=="6"){
             
@@ -561,7 +584,11 @@ public class Juegoo extends javax.swing.JFrame {
     private void Correcta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Correcta2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Correcta2ActionPerformed
-
+/**
+ * Creamos este metodo comprobar para saber si el resultado es correcto o incorrecto.
+ * @return ventana de dialogo
+ * @param evt 
+ */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         if(correcta.isSelected()&& Correcta2.isSelected() && jCheckBox1.isSelected()== false && jCheckBox3.isSelected()==false && jCheckBox4.isSelected()== false){
             JOptionPane.showMessageDialog(null, "Has Acertado", "Resultado", JOptionPane.INFORMATION_MESSAGE);
@@ -571,7 +598,11 @@ public class Juegoo extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Opcion Incorrecta. Vuelve a intentarlo", "Resultado", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton4ActionPerformed
-
+/**
+ * creamos este metodo para una vez finalizado el juego poder volver al inicio de la aplicacion.
+ * 
+ * @param evt 
+ */
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         Menu.nombrePreguntado = true;
         this.dispose();
