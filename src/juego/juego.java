@@ -22,34 +22,47 @@ import cosas.Menu;
 
 /**
  *
- * @author DIOS
+ * @author javier
+ * @version 1.1
+ *
  */
 public class juego extends javax.swing.JFrame {
-Timer t;
-JLabel background;
-ActionListener al;
-    String nombre,imagen;
-int puntos;
-int ronda;
-int acierto;
-int fallo;
-int tiempo;
- MiModelo modelo;
-String []operador={"+","-"};
+
     /**
-     * Creates new form juego
+     * atributos de juego t que es un timer background que es un jlabel al que
+     * es un actionlistener nombre que es un string imagen que es un string
+     * puntos un int ronda un int acierto un int fallo que es un int tiempo un
+     * int modelo un MiModelo operador un array de string
+     */
+
+    Timer t;
+    JLabel background;
+    ActionListener al;
+    String nombre, imagen;
+    int puntos;
+    int ronda;
+    int acierto;
+    int fallo;
+    int tiempo;
+    MiModelo modelo;
+    String[] operador = {"+", "-"};
+    
+    /**
+     * constructor de juego
+     * en este constructor se inicializa los componentes, los puntos, ronda, acierto, fallo, modelo,
+     * se carga el modelo a la tabla, se ponen en invisible lo que no queremos ver y en true lo que queramos ver
+     * agregamos tamaÃ±os y la localizacion que sera relativa, se aÃ±aden las fotos y se crea el metodo de timer que va de segundo en segundo
      */
     public juego() {
         initComponents();
-        puntos=0;
-        ronda=0;
-        acierto=0;
-        fallo=0;
-        
-        
+        puntos = 0;
+        ronda = 0;
+        acierto = 0;
+        fallo = 0;
+
         this.modelo = new MiModelo();
-       this.jTable1.setModel(modelo);
-       
+        this.jTable1.setModel(modelo);
+
         fin.setVisible(false);
         nomvre.setVisible(false);
         jPanel2.setVisible(false);
@@ -58,48 +71,49 @@ String []operador={"+","-"};
         informacion.setSize(700, 400);
         informacion.setLocationRelativeTo(this);
         fin.setLocationRelativeTo(this);
-         BufferedImage imagen = null;
-         BufferedImage imagen2 = null;
-         BufferedImage fondo = null;
-try {
-imagen = ImageIO.read(new File("juego.png"));
-imagen2 = ImageIO.read(new File("juego2.png"));
-fondo = ImageIO.read(new File("fondo.jpg"));
-} catch (IOException e) {
-e.printStackTrace();
-}
-Image dimjuego = imagen.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(),
-Image.SCALE_SMOOTH);
-jLabel1.setIcon(new ImageIcon(dimjuego));
+        BufferedImage imagen = null;
+        BufferedImage imagen2 = null;
+        BufferedImage fondo = null;
+        try {
+            imagen = ImageIO.read(new File("juego.png"));
+            imagen2 = ImageIO.read(new File("juego2.png"));
+            fondo = ImageIO.read(new File("fondo.jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Image dimjuego = imagen.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(),
+                Image.SCALE_SMOOTH);
+        jLabel1.setIcon(new ImageIcon(dimjuego));
 
-Image dimjuego2 = imagen2.getScaledInstance(jLabel32.getWidth(), jLabel32.getHeight(),
-Image.SCALE_SMOOTH);
-jLabel32.setIcon(new ImageIcon(dimjuego2));
-Image dimfondo = fondo.getScaledInstance(jPanel2.getWidth(), jPanel2.getHeight(),
-Image.SCALE_SMOOTH);
-setLayout(new BorderLayout());
-background = new JLabel(new ImageIcon(dimfondo));
-jPanel2.add(background);
-background.setLayout(new FlowLayout());
-        al=new ActionListener() {
-    @Override
-    public void actionPerformed(ActionEvent ae) {
-        if(jProgressBar1.getValue()<tiempo){
-        jProgressBar1.setValue(jProgressBar1.getValue()+1);
-    }else{
-            t.stop();
-          jPanel2.setVisible(false);
-          fin.setVisible(true);
-          fin.setSize(354, 324);
-          
-          jLabel27.setText(nombre);
-    jLabel28.setText(jLabel14.getText());
-    jLabel29.setText(jLabel16.getText());
-    jLabel30.setText(jLabel18.getText());
-    jLabel31.setText(jLabel20.getText());
-        }}
-};
-t=new Timer(1000,al);
+        Image dimjuego2 = imagen2.getScaledInstance(jLabel32.getWidth(), jLabel32.getHeight(),
+                Image.SCALE_SMOOTH);
+        jLabel32.setIcon(new ImageIcon(dimjuego2));
+        Image dimfondo = fondo.getScaledInstance(jPanel2.getWidth(), jPanel2.getHeight(),
+                Image.SCALE_SMOOTH);
+        setLayout(new BorderLayout());
+        background = new JLabel(new ImageIcon(dimfondo));
+        jPanel2.add(background);
+        background.setLayout(new FlowLayout());
+        al = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                if (jProgressBar1.getValue() < tiempo) {
+                    jProgressBar1.setValue(jProgressBar1.getValue() + 1);
+                } else {
+                    t.stop();
+                    jPanel2.setVisible(false);
+                    fin.setVisible(true);
+                    fin.setSize(354, 324);
+
+                    jLabel27.setText(nombre);
+                    jLabel28.setText(jLabel14.getText());
+                    jLabel29.setText(jLabel16.getText());
+                    jLabel30.setText(jLabel18.getText());
+                    jLabel31.setText(jLabel20.getText());
+                }
+            }
+        };
+        t = new Timer(1000, al);
     }
 
     /**
@@ -635,123 +649,176 @@ t=new Timer(1000,al);
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+ * 
+ * @param evt 
+ * boton que hace visible informacion
+ */
+
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-informacion.setVisible(true);
+        informacion.setVisible(true);
         informacion.setSize(700, 400);
-informacion.setLocationRelativeTo(this);       
+        informacion.setLocationRelativeTo(this);
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    /**
+ * 
+ * @param evt 
+ * boton que inicializa modelo.leer, vuelve invisible a informacion 
+ * y visible el jpanel1
+ */
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-modelo.leer();
-        informacion.setVisible(false); 
-jPanel1.setVisible(true);
-setLocationRelativeTo(this);
+        modelo.leer();
+        informacion.setVisible(false);
+        jPanel1.setVisible(true);
+        setLocationRelativeTo(this);
 
     }//GEN-LAST:event_jButton1ActionPerformed
+/**
+ * 
+ * @param evt 
+ * boton que coge el valor de el combobox y dependiendo de le inicializa el tiempo con un valor
+ * pone invisible a jpanel1, se carga el Menu.getnombre en nombre,jlabel8 es igual a nombre y jpanel2 visible
+ */
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-String item=jComboBox1.getSelectedItem().toString();
-        if("facil".equals(item)){
-    tiempo=50;
-}if("normal".equals(item)){
-    tiempo=30;
-}if("dificil".equals(item)){
-    tiempo=20;
-}
+        String item = jComboBox1.getSelectedItem().toString();
+        if ("facil".equals(item)) {
+            tiempo = 50;
+        }
+        if ("normal".equals(item)) {
+            tiempo = 30;
+        }
+        if ("dificil".equals(item)) {
+            tiempo = 20;
+        }
         jPanel1.setVisible(false);
-        
-        
- nombre=Menu.getNombre();
-jLabel8.setText(nombre);
-nomvre.setVisible(false);
-jPanel2.setVisible(true);
-setLocationRelativeTo(this);       
+
+        nombre = Menu.getNombre();
+        jLabel8.setText(nombre);
+        nomvre.setVisible(false);
+        jPanel2.setVisible(true);
+        setLocationRelativeTo(this);
 //nomvre.setVisible(true);
 // nomvre.setSize(400, 300);
 //nomvre.setLocationRelativeTo(this);// TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+/**
+ * 
+ * @param evt 
+ * es un boton
+ * nombre igual a jtexpane2.gettext
+ * jlabel8 le metemos el nombre,
+ * nomvre invisible y el jpanel2 visible
+ */
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-nombre=jTextPane2.getText();
-jLabel8.setText(nombre);
-nomvre.setVisible(false);
-jPanel2.setVisible(true);
-setLocationRelativeTo(this);// TODO add your handling code here:
+        nombre = jTextPane2.getText();
+        jLabel8.setText(nombre);
+        nomvre.setVisible(false);
+        jPanel2.setVisible(true);
+        setLocationRelativeTo(this);// TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+/**
+ * 
+ * @param evt 
+ * boton que iguala el maximo de la barra de progreso a el de tiempo
+ * e inicia el timer y empezar
+ */
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-jProgressBar1.setMaximum(tiempo);
-        if(!t.isRunning()){
-    t.start();
-    empezar();
-}
+        jProgressBar1.setMaximum(tiempo);
+        if (!t.isRunning()) {
+            t.start();
+            empezar();
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
+/**
+ * 
+ * @param evt 
+ * aqui se crea los parametros resta, numero,numero2, resultado,
+ * se les va a dar valores dependiendo de si fallas o aciertas y se muestran por un jlabel 
+ * y si hay mas de 5 fallos se sale 
+ */
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-t.stop();
+        t.stop();
         int suma;
-int resta;
-int numero;
-int numero2;
-int resultado;
-numero=Integer.parseInt(jLabel9.getText());
-numero2=Integer.parseInt(jLabel10.getText());
-resultado=Integer.parseInt(jTextPane1.getText());
-if(fallo>=5){
-    jPanel2.setVisible(false);
-    fin.setVisible(true);
-    fin.setSize(354, 324);
-    jLabel27.setText(nombre);
-    jLabel28.setText(jLabel14.getText());
-    jLabel29.setText(jLabel16.getText());
-    jLabel30.setText(jLabel18.getText());
-    jLabel31.setText(jLabel20.getText());
-}else{
-        if(jLabel11.getText()=="-"){
-            resta=numero-numero2;
-            if(resta==resultado){
-                acierto=acierto+1;
-                ronda=ronda+1;
-                puntos=puntos+10;
-                t.restart();
-                empezar();
-                jProgressBar1.setValue(0);
-            }else{
-              fallo=fallo+1;
-                ronda=ronda+1;
-                puntos=puntos-5;
-                t.restart();
-                empezar();
-                jProgressBar1.setValue(0);
+        int resta;
+        int numero;
+        int numero2;
+        int resultado;
+        numero = Integer.parseInt(jLabel9.getText());
+        numero2 = Integer.parseInt(jLabel10.getText());
+        resultado = Integer.parseInt(jTextPane1.getText());
+        if (fallo >= 5) {
+            jPanel2.setVisible(false);
+            fin.setVisible(true);
+            fin.setSize(354, 324);
+            jLabel27.setText(nombre);
+            jLabel28.setText(jLabel14.getText());
+            jLabel29.setText(jLabel16.getText());
+            jLabel30.setText(jLabel18.getText());
+            jLabel31.setText(jLabel20.getText());
+        } else {
+            if (jLabel11.getText() == "-") {
+                resta = numero - numero2;
+                if (resta == resultado) {
+                    acierto = acierto + 1;
+                    ronda = ronda + 1;
+                    puntos = puntos + 10;
+                    t.restart();
+                    empezar();
+                    jProgressBar1.setValue(0);
+                } else {
+                    fallo = fallo + 1;
+                    ronda = ronda + 1;
+                    puntos = puntos - 5;
+                    t.restart();
+                    empezar();
+                    jProgressBar1.setValue(0);
+                }
             }
-}  if(jLabel11.getText()=="+"){
-            suma=numero+numero2;
-            if(suma==resultado){
-                acierto=acierto+1;
-                ronda=ronda+1;
-                puntos=puntos+10;
-                t.restart();
-                empezar();
-                jProgressBar1.setValue(0);
-            }else{
-              fallo=fallo+1;
-                ronda=ronda+1;
-                puntos=puntos-5;  
-                t.restart();
-                empezar();
-                jProgressBar1.setValue(0);
+            if (jLabel11.getText() == "+") {
+                suma = numero + numero2;
+                if (suma == resultado) {
+                    acierto = acierto + 1;
+                    ronda = ronda + 1;
+                    puntos = puntos + 10;
+                    t.restart();
+                    empezar();
+                    jProgressBar1.setValue(0);
+                } else {
+                    fallo = fallo + 1;
+                    ronda = ronda + 1;
+                    puntos = puntos - 5;
+                    t.restart();
+                    empezar();
+                    jProgressBar1.setValue(0);
+                }
             }
-}}
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
+/**
+ * 
+ * @param evt 
+ * es un boton que llama a modelo.grabar, pone invisible a fin y visible a jpanel1
+ */
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-aniadirTabla(); 
+        aniadirTabla();
 
-modelo.grabar();
-fin.setVisible(false);
-jPanel1.setVisible(true);
+        modelo.grabar();
+        fin.setVisible(false);
+        jPanel1.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
+/**
+ * 
+ * @param evt 
+ * 
+ */
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         Menu.setNombrePreguntado(true);
@@ -759,10 +826,11 @@ jPanel1.setVisible(true);
         Menu frame = new Menu();
         frame.setVisible(true);
     }//GEN-LAST:event_jButton8ActionPerformed
-    
+
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -794,30 +862,35 @@ jPanel1.setVisible(true);
             }
         });
     }
-    private void empezar(){
+
+    private void empezar() {
         int numero;
         int numero2;
-        int operado=operador.length;
+        int operado = operador.length;
         int num;
-    jLabel14.setText(String.valueOf(acierto));
-    jLabel16.setText(String.valueOf(fallo));
-    jLabel18.setText(String.valueOf(ronda));
-    jLabel20.setText(String.valueOf(puntos));
-    numero =(int)(Math.random()*100+1);
-    numero2 =(int)(Math.random()*100+1);
-    num=(int) (Math.random()*operado);
-    jLabel11.setText(operador[num]);
-jLabel9.setText(String.valueOf(numero));
-jLabel10.setText(String.valueOf(numero2));
+        jLabel14.setText(String.valueOf(acierto));
+        jLabel16.setText(String.valueOf(fallo));
+        jLabel18.setText(String.valueOf(ronda));
+        jLabel20.setText(String.valueOf(puntos));
+        numero = (int) (Math.random() * 100 + 1);
+        numero2 = (int) (Math.random() * 100 + 1);
+        num = (int) (Math.random() * operado);
+        jLabel11.setText(operador[num]);
+        jLabel9.setText(String.valueOf(numero));
+        jLabel10.setText(String.valueOf(numero2));
 
     }
-    public void aniadirTabla() {      
-        
-       
+
+    /**
+     * Añade un jugador a la tabla
+     */
+
+    public void aniadirTabla() {
+
         jugador jugadores = new jugador(nombre, puntos, ronda);
         modelo.aniadir(jugadores);
     }
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog fin;
