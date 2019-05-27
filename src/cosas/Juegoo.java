@@ -49,15 +49,15 @@ public class Juegoo extends javax.swing.JFrame {
         }
         
         
-        BufferedImage imgCap = null;
-        try {
-            imgCap = ImageIO.read(new File("src/cosas/cap.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Image dimgCap = imgCap.getScaledInstance(jLabel3.getWidth(), jLabel3.getHeight(),
-                Image.SCALE_SMOOTH);
-        jLabel3.setIcon(new ImageIcon(dimgCap));
+//        BufferedImage imgCap = null;
+//        try {
+//            imgCap = ImageIO.read(new File("src/cosas/cap.png"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        Image dimgCap = imgCap.getScaledInstance(jLabel3.getWidth(), jLabel3.getHeight(),
+//                Image.SCALE_SMOOTH);
+//        jLabel3.setIcon(new ImageIcon(dimgCap));
         
         
     

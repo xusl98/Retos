@@ -156,7 +156,7 @@ public class Frame extends javax.swing.JFrame {
                     lblCoche.setIcon(new ImageIcon(dimgCoche));
 
                     lblCoche.setLocation(x, y);
-                    if ((lblCoche.getX() > 361 && lblCoche.getY() < 228) || (lblCoche.getX() < 281 && lblCoche.getY() < 228)) {
+                    if ((lblCoche.getX() > 361 && lblCoche.getY() < 208) || (lblCoche.getX() < 281 && lblCoche.getY() < 208)) {
 
                     } else {
                         lblCoche.setLocation(lblCoche.getX(), lblCoche.getY() - 20);
@@ -180,7 +180,7 @@ public class Frame extends javax.swing.JFrame {
                     lblCoche.setIcon(new ImageIcon(dimgCoche));
 
                     lblCoche.setLocation(x, y);
-                    if ((lblCoche.getX() > 341 && lblCoche.getY() < 207) || (lblCoche.getX() > 341 && lblCoche.getY() > 277)) {
+                    if ((lblCoche.getX() > 341 && lblCoche.getY() < 180) || (lblCoche.getX() > 341 && lblCoche.getY() > 277)) {
 
                     } else {
                         lblCoche.setLocation(lblCoche.getX() + 20, lblCoche.getY());
@@ -202,7 +202,7 @@ public class Frame extends javax.swing.JFrame {
                     lblCoche.setIcon(new ImageIcon(dimgCoche));
 
                     lblCoche.setLocation(x, y);
-                    if ((lblCoche.getX() > 341 && lblCoche.getY() > 276) || (lblCoche.getX() < 281 && lblCoche.getY() > 276)) {
+                    if ((lblCoche.getX() > 379 && lblCoche.getY() > 246) || (lblCoche.getX() < 281 && lblCoche.getY() > 246)) {
 
                     } else {
                         lblCoche.setLocation(lblCoche.getX(), lblCoche.getY() + 20);
@@ -225,7 +225,7 @@ public class Frame extends javax.swing.JFrame {
                     lblCoche.setIcon(new ImageIcon(dimgCoche));
 
                     lblCoche.setLocation(x, y);
-                    if ((lblCoche.getX() < 282 && lblCoche.getY() < 207) || (lblCoche.getX() < 282 && lblCoche.getY() > 277)) {
+                    if ((lblCoche.getX() < 282 && lblCoche.getY() < 180) || (lblCoche.getX() < 282 && lblCoche.getY() > 277)) {
 
                     } else {
                         lblCoche.setLocation(lblCoche.getX() - 20, lblCoche.getY());
