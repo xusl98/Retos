@@ -1,6 +1,12 @@
 package cosas;
 
 
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /*
@@ -41,6 +47,17 @@ public class Juegoo extends javax.swing.JFrame {
         for (int i = 0; i < opciones2.length; i++) {
             jComboBox3.addItem(opciones2[i]);
         }
+        
+        
+        BufferedImage imgCap = null;
+        try {
+            imgCap = ImageIO.read(new File("src/cosas/cap.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Image dimgCap = imgCap.getScaledInstance(jLabel3.getWidth(), jLabel3.getHeight(),
+                Image.SCALE_SMOOTH);
+        jLabel3.setIcon(new ImageIcon(dimgCap));
         
         
     
