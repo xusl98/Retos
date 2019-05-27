@@ -121,7 +121,7 @@ public class tablas extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 1.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 1.png"))); // NOI18N
 
         salir1.setText("Salir");
         salir1.addActionListener(new java.awt.event.ActionListener() {
@@ -186,7 +186,7 @@ public class tablas extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Impact", 0, 14)); // NOI18N
         jLabel3.setText("¿CUANTAS ESTÁN MAL?");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 2.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 2.png"))); // NOI18N
 
         Comprobar2.setText("Comprobar");
         Comprobar2.addActionListener(new java.awt.event.ActionListener() {
@@ -258,7 +258,7 @@ public class tablas extends javax.swing.JFrame {
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 3.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 3.png"))); // NOI18N
 
         javax.swing.GroupLayout paneldel3Layout = new javax.swing.GroupLayout(paneldel3);
         paneldel3.setLayout(paneldel3Layout);
@@ -306,7 +306,7 @@ public class tablas extends javax.swing.JFrame {
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 4.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 4.png"))); // NOI18N
 
         salir4.setText("Salir");
         salir4.addActionListener(new java.awt.event.ActionListener() {
@@ -371,7 +371,7 @@ public class tablas extends javax.swing.JFrame {
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 5.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 5.png"))); // NOI18N
 
         salir5.setText("Salir");
         salir5.addActionListener(new java.awt.event.ActionListener() {
@@ -434,7 +434,7 @@ public class tablas extends javax.swing.JFrame {
 
         paneldel6.setBackground(new java.awt.Color(0, 204, 0));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 6.png"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 6.png"))); // NOI18N
 
         salir6.setText("Salir");
         salir6.addActionListener(new java.awt.event.ActionListener() {
@@ -501,7 +501,7 @@ public class tablas extends javax.swing.JFrame {
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 7.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 7.png"))); // NOI18N
 
         salir7.setText("Salir");
         salir7.addActionListener(new java.awt.event.ActionListener() {
@@ -562,7 +562,7 @@ public class tablas extends javax.swing.JFrame {
 
         jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 8.png"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 8.png"))); // NOI18N
 
         salir8.setText("Salir");
         salir8.addActionListener(new java.awt.event.ActionListener() {
@@ -644,7 +644,7 @@ public class tablas extends javax.swing.JFrame {
 
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 9.png"))); // NOI18N
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 9.png"))); // NOI18N
 
         javax.swing.GroupLayout paneldel9Layout = new javax.swing.GroupLayout(paneldel9);
         paneldel9.setLayout(paneldel9Layout);
@@ -709,7 +709,7 @@ public class tablas extends javax.swing.JFrame {
 
         jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
 
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tabla del 10.png"))); // NOI18N
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/tabla del 10.png"))); // NOI18N
 
         javax.swing.GroupLayout paneldel10Layout = new javax.swing.GroupLayout(paneldel10);
         paneldel10.setLayout(paneldel10Layout);
@@ -769,7 +769,7 @@ public class tablas extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suma caracoles.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cosas/suma caracoles.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -781,7 +781,7 @@ public class tablas extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(126, 126, 126)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(130, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(

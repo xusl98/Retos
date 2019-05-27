@@ -93,7 +93,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 1.png"/>
+              <Image iconType="3" name="/cosas/tabla del 1.png"/>
             </Property>
           </Properties>
         </Component>
@@ -219,7 +219,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 2.png"/>
+              <Image iconType="3" name="/cosas/tabla del 2.png"/>
             </Property>
           </Properties>
         </Component>
@@ -371,7 +371,7 @@
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 3.png"/>
+              <Image iconType="3" name="/cosas/tabla del 3.png"/>
             </Property>
           </Properties>
         </Component>
@@ -468,7 +468,7 @@
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 4.png"/>
+              <Image iconType="3" name="/cosas/tabla del 4.png"/>
             </Property>
           </Properties>
         </Component>
@@ -589,7 +589,7 @@
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 5.png"/>
+              <Image iconType="3" name="/cosas/tabla del 5.png"/>
             </Property>
           </Properties>
         </Component>
@@ -687,7 +687,7 @@
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 6.png"/>
+              <Image iconType="3" name="/cosas/tabla del 6.png"/>
             </Property>
           </Properties>
         </Component>
@@ -823,7 +823,7 @@
         <Component class="javax.swing.JLabel" name="jLabel15">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 7.png"/>
+              <Image iconType="3" name="/cosas/tabla del 7.png"/>
             </Property>
           </Properties>
         </Component>
@@ -944,7 +944,7 @@
         <Component class="javax.swing.JLabel" name="jLabel17">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 8.png"/>
+              <Image iconType="3" name="/cosas/tabla del 8.png"/>
             </Property>
           </Properties>
         </Component>
@@ -1089,7 +1089,7 @@
         <Component class="javax.swing.JLabel" name="jLabel20">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 9.png"/>
+              <Image iconType="3" name="/cosas/tabla del 9.png"/>
             </Property>
           </Properties>
         </Component>
@@ -1210,7 +1210,7 @@
         <Component class="javax.swing.JLabel" name="jLabel22">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/tabla del 10.png"/>
+              <Image iconType="3" name="/cosas/tabla del 10.png"/>
             </Property>
           </Properties>
         </Component>
@@ -1238,7 +1238,7 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
                   <Component id="jButton1" min="-2" pref="183" max="-2" attributes="0"/>
-                  <EmptySpace pref="130" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Component id="jLabel5" alignment="1" pref="0" max="32767" attributes="0"/>
           </Group>
@@ -1276,7 +1276,7 @@
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/suma caracoles.png"/>
+              <Image iconType="3" name="/cosas/suma caracoles.png"/>
             </Property>
           </Properties>
         </Component>
